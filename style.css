@@ -1,0 +1,304 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(#2e0caa, #530363);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+h1{
+    color: aqua;
+    font-size: 35px;
+    font-family: cursive;
+    margin: 0;
+}
+nav{
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+}
+nav h3{
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+nav h3:hover{
+    color: #00fcc0;
+}
+button{
+    border-radius: 10px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #ff4655;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: #ff1f35;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff4655;
+}
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: #111;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: 0.5s;
+    z-index: 999;
+}
+
+
+.menu-activado{
+    transform: translateX(0);
+}
+
+
+.menu-lateral a{
+    text-decoration: none;
+}
+
+.menu-lateral h3{
+    color: white;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+
+.menu-lateral h3:hover{
+    color: aqua;
+    transform: translateX(10px);
+}
+main{
+    margin-top: 120px;
+}
+section{
+    padding: 20px;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px cyan;
+    background-color: #530363;
+    line-height: 1.5;
+    transition: 0.5s;
+}
+section:hover{
+    transform: scale(1.01);
+}
+p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(189, 14, 14, 0.795);
+}
+h3{
+    text-align: center;
+    color: rgb(0, 183, 255);
+}
+img{
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00fcc0;
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+}
+img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ffffff;
+}
+.contenedor-imagen{
+    position: relative;
+    width: 500px;
+    margin: auto;
+}
+
+.fondo{
+    width: 500px;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #00ff00;
+    border-radius: 50%;
+}
+.logo:hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #ffffff;
+    border-radius: 50%;
+
+
+}
+.contenedor-play{
+    position: relative;
+    width: 500px;
+    margin: auto;
+}
+.fonplay{
+    width: 500px;
+}
+.plays{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #006eff;
+    border-radius: 50%;
+}
+.plays:hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #ff0000;
+    border-radius: 50%;
+
+}
+.contendor-ninte{
+    position: relative;
+    width: 500px;
+    margin: auto;
+}
+
+.fonninte{
+    width: 500px;
+}
+.nintendo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #ffffff;
+    border-radius: 50%;
+}
+.nintendo:hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #ee0808;
+    border-radius: 50%;
+
+}
+.contenedor-steam{
+    position: relative;
+    width: 500px;
+    margin: auto;
+}
+
+.fonsteam{
+    width: 500px;
+}
+.steam{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #1100ff;
+    border-radius: 50%;
+}
+.steam:hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 0 40px #ffffff;
+    border-radius: 50%;
+
+}
+footer{
+    background: black;
+    padding: 20px;
+    margin-top: 40px;
+}
+.lluvia-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.logo-lluvia{
+    position: absolute;
+    top: -100px;
+    width: 60px;
+    animation: caer 5s linear infinite;
+}
+
+@keyframes caer{
+
+    from{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+
+    to{
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+
+}
